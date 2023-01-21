@@ -1,0 +1,73 @@
+<html>
+  <title>Led zeppelin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/w3.css"/>
+  <body>
+    <div class="w3-container-fluid">
+      <img src="assets/img/Banner.jpg" width="100%"/>
+    </div>
+
+    <div class="w3-bar w3-deep-purple">
+      <button class="w3-bar-item w3-button" onclick="openKota('HOME')">HOME</button>
+      <button class="w3-bar-item w3-button" onclick="openKota('LED ZEPPELIN')">LED ZEPPELIN</button>
+      <button class="w3-bar-item w3-button" onclick="openKota('BIOGRAFI')">BIOGRAFI</button>
+
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">PERSONIL</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <button class="w3-bar-item w3-button" onclick="openKota('ROBERT PLANT')">ROBERT PLANT</button>
+          <button class="w3-bar-item w3-button" onclick="openKota('JIMMY PAGE')">JIMMY PAGE</button>
+          <button class="w3-bar-item w3-button" onclick="openKota('JOHN PAUL JONES')">JOHN PAUL JONES</button>
+          <button class="w3-bar-item w3-button" onclick="openKota('JOHN BONHAM')">JOHN BONHAM</button>
+        </div>
+      </div>
+      </div>
+
+    <center>
+    <div id="HOME" class="w3-container kota w3-animate-zoom W3-padding-48" style="display: none">
+        <img src="assets/img/WELCOME.png" width="50%">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed incidunt mollitia dolore. A ipsam quaerat, odio nemo, fugit vero maxime ex velit mollitia perferendis culpa aliquid ipsum consequatur eligendi voluptatum.</p>
+    </div>
+        <div id="LED ZEPPELIN" class="w3-container kota w3-animate-bottom w3-padding-48" style="display: none">
+          <img src="assets/img/Led zeppelin.jpg" width="50%"/>
+    </div>
+
+    <div id="BIOGRAFI" class="w3-container kota w3-animate-fading w3-padding-48" style="display: none">
+      <H1>BIOGRAFI LED ZEPPELIN</H1>
+      <P>Led Zeppelin adalah kelompok musik rock legendaris asal Inggris yang dibentuk pada September 1968. Personel Led Zeppelin saat itu terdiri dari Jimmy Page, Robert Plant, John Paul Jones dan John Bonham.
+
+Musik-musik Led Zeppelin menonjolkan suara gitar yang keras dan berat dan dianggap sebagai salah satu band heavy metal pertama. Band ini juga tercatat tidak pernah merilis lagu single, kecuali dalam bentuk album.
+
+Led Zeppelin kemudian bubar setelah pemain drum John Bonham meninggal pada 1980. Namun musik-musiknya melegenda dan tetap dicintai pengemarnya. Bahkan album Led Zeppelin telah terjual lebih dari 300 juta keping.
+
+Sementara itu, tiga orang anggota Led Zeppelin, masing-masing Robert Plant (vokal), Jimmy Page (gitar) dan John Paul Jones (bass) mengadakan konser reuni di The O2, London pada 10 Desember 2007. Dalam konser yang ditonton 20.000 penonton itu, juga mengajak putra John Bonham, Jason.</P>
+    </div>
+
+    <div id="ROBERT PLANT" class="w3-container kota w3-padding-48 w3-animate-top" style="display: none">
+      <img src="assets/img/robert plant.jpg" width="30%"/>
+    </div>
+
+    <div id="JIMMY PAGE" class="w3-container kota w3-padding-48 w3-animate-top" style="display: none">
+      <img src="assets/img/jimmy.jpg" width="30%"/>
+    </div>
+
+    <div id="JOHN PAUL JONES" class="w3-container kota w3-padding-48 w3-animate-top" style="display: none">
+      <img src="assets/img/John paul.jpg" width="30%"/>
+    </div>
+
+    <div id="JOHN BONHAM" class="w3-container kota w3-padding-48 w3-animate-top" style="display: none">
+      <img src="assets/img/johnbonham.jpg" width="30%"/>
+    </div>
+
+    <script>
+      function openKota(namakota) {
+        var i;
+        var x = document.getElementsByClassName('kota');
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = 'none';
+        }
+        document.getElementById(namakota).style.display = 'block';
+      }
+    </script>
+  </body>
+</html>
